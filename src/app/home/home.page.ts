@@ -23,7 +23,7 @@ export class HomePage implements OnInit {
     this.httpClient.get('http://www.omdbapi.com/?apikey=3a056eae&s=net&page=1').subscribe(data =>{
       const response: any = data;
 
-      this.stories = response.Seach;
+      this.stories = response.Search;
     });
   }
 
@@ -31,7 +31,7 @@ export class HomePage implements OnInit {
     this.httpClient.get('http://www.omdbapi.com/?apikey=3a056eae&s=net&page=1').subscribe(data =>{
       const response: any = data;
 
-      this.movies = response.Seach;
+      this.movies = response.Search;
     });
   }
 }
