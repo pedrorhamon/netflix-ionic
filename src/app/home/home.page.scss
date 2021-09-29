@@ -14,7 +14,37 @@
   position: relative;
   width: 100%;
   height: 60vh;
-  background-image: url('//9848493.fls.doubleclick.net/activityi;src=9848493;type=hmx;cat=hboma0;ord=1;num=9276998317222;gtm=2wg9r0;auiddc=1630889098.1626041430;u2=%2Fpage%2Furn%3Ahbo%3Apage%3Ahome;u3=undefined;ps=1;~oref=https%3A%2F%2Fplay.hbomax.com%2Fpage%2Furn%3Ahbo%3Apage%3Ahome?');
   background-size: cover;
   background-position: center;
+  border-bottom: 1px solid #000;
+}
+
+.gradient {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-image: url('/assets/img/gradient.png');
+  background-size: cover;
+
+  &.top {
+    top: 0;
+    transform: rotate(1880deg);
+  }
+
+  &.bottom {
+    bottom: 0;
+
+    .title{
+      position: absolute;
+      left: 0;
+      bottom: 70px;
+      width: 100%;
+
+    img{
+      width: 80%;
+      margin-left: 70px;
+    }
+   }
+  }
 }
